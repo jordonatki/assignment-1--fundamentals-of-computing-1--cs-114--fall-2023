@@ -1,5 +1,6 @@
 // Import libraries here
-/* Goal: Print initials in large block letters,convert Fahrenheit to celsius   
+/* Goal: Print initials in large block letters,convert Fahrenheit to celsius
+and save,take input from user in a 5 string character, and save in reverse.*/   
 public class Assignment1 {
   public static void main(String[] args) {
     System.out.println();
@@ -11,7 +12,7 @@ public class Assignment1 {
     System.out.println("JJ J JJ   AA              AA");
 
 
-    //Fahrenheit to Celsius
+    //Fahrenheit to Celsius/
   
   }  
 }
