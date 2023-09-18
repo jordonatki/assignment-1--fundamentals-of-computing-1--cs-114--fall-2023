@@ -1,4 +1,5 @@
-// Import libraries here
+import java.util.Scanner;
+import java.util.Random;
 /* Goal: Print initials in large block letters,convert Fahrenheit to celsius
 and save,take input from user in a 5 string character, and save in reverse.*/   
 public class Assignment1 {
@@ -13,7 +14,11 @@ public class Assignment1 {
 
 
     //Fahrenheit to Celsius/
-  
+    Scanner input = new Scanner(System.in); {
+    System.out.println("enter a number in fahrenheit");
+    int fahrenheit = input.nextInt();
+    int celsius = (fahrenheit - 32) * 5/9; //Conversion equation for fahrenheit to celsius
+    System.out.println(Temperature in Celsius);  
   }  
 }
 
