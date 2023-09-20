@@ -4,7 +4,7 @@ import java.util.Random;
 and save,take input from user in a 5 string character, and save in reverse.*/   
 public class Assignment1 {
   public static void main(String[] args) {
-    int fahrenheit; // declares 
+    int fahrenheit;32
     int max = 16384, min = 32;
     double celsius;
     String snowy, newString;
@@ -32,10 +32,10 @@ public class Assignment1 {
 
     //Random number generator
     Random rand = new Random();
-    System.out.println("Generated numbers are within "+min+" to "+max);
+    System.out.println("Generated numbers are within "+min+" to "+max); //returns random number between set max and min
 
     //Combining steps 2-4
-    System.out.println(celsius + newString + (rand.nextInt(max - min + 1) + 32)); //
+    System.out.println(celsius + newString + (rand.nextInt(max - min + 1) + 32)); //Final compilation of all variables
     input.close();
   }
 }
