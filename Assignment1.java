@@ -4,6 +4,10 @@ import java.util.Random;
 and save,take input from user in a 5 string character, and save in reverse.*/   
 public class Assignment1 {
   public static void main(String[] args) {
+    int fahrenheit; // declares 
+    int max = 16384, min = 32;
+    double celsius;
+    String snowy, newString;
     System.out.println();
     System.out.println("JJ JJ JJ JJ       A A");
     System.out.println("     JJ         AA   AA");
@@ -16,23 +20,22 @@ public class Assignment1 {
     //Fahrenheit to Celsius/
     Scanner input = new Scanner(System.in); 
     System.out.println("enter a number in fahrenheit");
-    int fahrenheit = input.nextInt();
-    double celsius = (fahrenheit - 32) * 5/9; //Conversion equation for fahrenheit to celsius
+    fahrenheit = input.nextInt();
+    celsius = (fahrenheit - 32) * 5/9; //Conversion equation for fahrenheit to celsius
 
 
     //5-char string 
     System.out.println("enter a 5-character string");
-    String snowy = input.next();
-    String newString = new StringBuilder(snowy.substring(1, 4)).reverse().toString();
+    snowy = input.next();
+    newString = new StringBuilder(snowy.substring(1, 4)).reverse().toString(); //Remove first and last letters and returns in reverse
     
 
     //Random number generator
     Random rand = new Random();
-    int max=16384, min=32;
     System.out.println("Generated numbers are within "+min+" to "+max);
 
     //Combining steps 2-4
-    System.out.println(celsius + newString + (rand.nextInt(max - min + 1) + 32));
+    System.out.println(celsius + newString + (rand.nextInt(max - min + 1) + 32)); //
     input.close();
   }
 }
