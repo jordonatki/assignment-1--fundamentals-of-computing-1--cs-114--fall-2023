@@ -14,28 +14,25 @@ public class Assignment1 {
 
 
     //Fahrenheit to Celsius/
-    Scanner input = new Scanner(System.in); {
+    Scanner input = new Scanner(System.in); 
     System.out.println("enter a number in fahrenheit");
     int fahrenheit = input.nextInt();
-    int celsius = (fahrenheit - 32) * 5/9; //Conversion equation for fahrenheit to celsius
-    System.out.println("Temperature in Celsius"+celsius);
+    double celsius = (fahrenheit - 32) * 5/9; //Conversion equation for fahrenheit to celsius
 
 
-    //5-char string
-    Scanner input = new Scanner(System.in); { 
+    //5-char string 
     System.out.println("enter a 5-character string");
-    String snowy = input.nextLine();
-    String phrase = "snowy";
-    System.out.println("Reversed word");
-
+    String snowy = input.next();
+    String newString = new StringBuilder(snowy.substring(1, 4)).reverse().toString();
+    
 
     //Random number generator
     Random rand = new Random();
-    int max=16,384,min=32
+    int max=16384, min=32;
     System.out.println("Generated numbers are within "+min+" to "+max);
-    System.out.println(rand.nextInt (max - min+1) + min); //Generates numbers between set min and max
+
+    //Combining steps 2-4
+    System.out.println(celsius + newString + (rand.nextInt(max - min + 1) + 32));
     input.close();
-      } 
-    }    
   }
 }
